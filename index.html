@@ -18,7 +18,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="onLoadPage()">
    <div class="header" id="header">
       <div class="container">
          <a href="#" class="logo">Soudani</a>
@@ -28,7 +28,7 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#features">Features</a></li>
             <li class="other-links">
-               <a   href="#" >Other Links</a>
+               <a   href="#" class="other-links" onmouseenter="visibleMenu()">Other Links</a>
                <div class="mega-menu">
                   <img src="images/megamenu.png" alt="">
                   <div class="list-links">
@@ -37,8 +37,8 @@
                            <a href="#testimonials">
                               <i class="ri-question-answer-line"></i>
                               <h4>Testimonials</h4>
-                        </a>
-                     </li>
+                           </a>
+                        </li>
                         <li><a href="#team-mombers">
                            <i class="ri-user-line"></i>
                            <h4>Team Mombers</h4>
@@ -99,7 +99,7 @@
       </a>
    </div> 
    <!-- Start Articles -->
-   <div id="articles" class="articles">
+   <div id="article" class="articles">
       <h2 class="main-title">ARTICLES</h2>
       <div class="container">
          <div class="article">
@@ -262,7 +262,7 @@
    </div>
    <!-- End Features -->
    <!-- Start Testimonials -->
-   <div class="testimonials">
+   <div class="testimonials" id="testimonials">
       <h2 class="main-title">Testimonials</h2>
       <div class="container">
          <div class="testimonial">
@@ -348,7 +348,7 @@
    </div>
    <!-- End Testimonials -->
    <!-- Start Team Members -->
-   <div class="team-mombers">
+   <div class="team-mombers" id="team-mombers">
       <h2 class="main-title">TEAM MOMBERS</h2>
       <div class="container">
          <div class="team-momber">
@@ -476,7 +476,7 @@
    </div>
    <!-- End Team Members -->
    <!-- Start Services -->
-   <div class="services">
+   <div class="services" id="services">
       <h2 class="main-title"> SERVICES</h2>
       <div class="container">
          <div class="service">
@@ -531,8 +531,8 @@
    </div>
    <!-- End Services -->
    <!-- Start Our Skills-->
-   <div class="our-skills">
-      <h2 class="main-title"> SERVICES</h2>
+   <div class="our-skills" id="our-skills">
+      <h2 class="main-title"> OUR SKILLS</h2>
       <div class="container">
          <img src="images/skills.png" alt="">
          <div class="skills">
@@ -577,7 +577,7 @@
    </div>
    <!-- End Our Skills-->
    <!-- Start HOW IT WORKS  -->
-   <div class="how-it-works">
+   <div class="how-it-works" id="how-it-works">
       <h2 class="main-title"> HOW IT WORKS </h2>
       <div class="container">
          <img class="work-stips-image" src="images/work-steps.png" alt="">
@@ -608,7 +608,7 @@
    </div>
    <!-- End HOW IT WORKS  -->
    <!-- Start LATEST EVENTS  -->
-   <div class="latest-events">
+   <div class="latest-events" id="latest-events">
       <h2 class="main-title"> HOW IT WORKS </h2>
       <img src="images/dots.png" class="dots1"alt="">
       <img src="images/dots.png" class="dots2"alt="">
@@ -648,7 +648,8 @@
    </div>
    <!-- End LATEST EVENTS  -->
 
-   <div class="pricing-plans">
+   <!-- start Pricing plans  -->
+   <div class="pricing-plans" id="pricing-plans">
       <h2 class="main-title"> PRICING PLANS </h2>
       <img src="images/dots.png" class="dots1"alt="">
       <img src="images/dots.png" class="dots2"alt="">
@@ -704,7 +705,7 @@
       </div>
    </div>
    <!-- Start TOP VIDEOS -->
-   <div class="top-videos">
+   <div class="top-videos" id="top-videos">
       <h2 class="main-title"> PRICING PLANS </h2>
       <div class="container">
          <div class="video-timing">
@@ -861,4 +862,6 @@
      </div>
   </footer>
   <!-- End Footer-->
+   <!-- js file -->
+    <script src="style.js"></script>
 </body>

@@ -17,7 +17,7 @@
    --main-padding:90px
 }
 html{
-   scroll-behavior: smooth
+   scroll-behavior: smooth;
 }
 body{
    font-family: "Cairo", serif;
@@ -129,6 +129,9 @@ a{
    --color-effect-hover:#fafafa;
 }
 .header{
+   position: fixed;
+    width: 100%;
+    z-index: 99;
    background-color: white;
    box-shadow: 0 0px 5px #cacaca; 
 }
@@ -210,10 +213,12 @@ a{
    border-bottom: 4px solid var(--main-color);
    visibility:hidden;  
 }
-.header .container .main-menu > .other-links:hover .mega-menu{
+
+.header .container .main-menu > .other-links:hover .visible-mega{
    visibility: visible;
-   transition: hover ;
+   transition: all .3 ;
 }
+
 .header .mega-menu > img{
    width: 400px;
    height: 250px;
